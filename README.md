@@ -1,7 +1,7 @@
-# NeoFin - Redefine Your Financial Future
+# CyberFund - Redefine Your Financial Future
 
 ## Overview
-NeoFin is a cyberpunk-themed, AI-powered financial platform designed to bridge the gender gap in access to finance for women entrepreneurs. It provides AI-driven credit evaluation, alternative funding opportunities, and financial literacy tools to empower business owners.
+CyberFund is a cyberpunk-themed, AI-powered financial platform designed to bridge the gender gap in access to finance for women entrepreneurs. It provides AI-driven credit evaluation, alternative funding opportunities, and financial literacy tools to empower business owners.
 
 ## Features
 - **AI-Powered Credit Evaluation** – Uses alternative data to assess creditworthiness fairly.
@@ -39,8 +39,8 @@ NeoFin is a cyberpunk-themed, AI-powered financial platform designed to bridge t
 
 ### **Clone the Repository:**
 ```bash
-git clone https://github.com/Guten-Morgen1302/NeoFin-Redefine-Your-Financial-Future.git
-cd NeoFin-Redefine-Your-Financial-Future
+git clone https://github.com/Guten-Morgen1302/CyberFund-Redefine-Your-Financial-Future.git
+cd CyberFund-Redefine-Your-Financial-Future
 ```
 
 ### **Install Dependencies:**
@@ -70,7 +70,7 @@ vercel --prod
 ```
 
 ## Contributing
-Feel free to submit issues or pull requests to improve NeoFin.
+Feel free to submit issues or pull requests to improve CyberFund.
 
 ## License
 This project is licensed under the MIT License.
