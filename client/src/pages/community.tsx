@@ -229,7 +229,7 @@ export default function Community() {
       <main className="container mx-auto px-4 pt-24 pb-12">
         <div className="text-center mb-12">
           <GlitchText 
-            text="NeoFin Community" 
+            text="CyberFund Community" 
             className="font-orbitron text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyber-pink to-cyber-blue bg-clip-text text-transparent mb-4"
           />
           <p className="text-lg text-cyber-text-dim max-w-3xl mx-auto">
