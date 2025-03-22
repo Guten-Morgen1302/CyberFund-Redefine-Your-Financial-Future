@@ -65,7 +65,7 @@ export function HeroSection() {
                     <p className="font-orbitron text-sm text-cyber-green">AI SYSTEM ONLINE</p>
                   </div>
                   <div className="font-exo text-cyber-text mb-2">
-                    "NeoFin's AI credit system helped me secure funding when traditional banks said no."
+                    "CyberFund's AI credit system helped me secure funding when traditional banks said no."
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="h-6 w-6 rounded-full overflow-hidden">
