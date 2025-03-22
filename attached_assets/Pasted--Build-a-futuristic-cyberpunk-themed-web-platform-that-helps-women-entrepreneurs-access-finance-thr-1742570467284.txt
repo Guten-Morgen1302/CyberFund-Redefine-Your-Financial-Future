@@ -1,0 +1,35 @@
+"Build a futuristic, cyberpunk-themed web platform that helps women entrepreneurs access finance through AI-driven credit evaluation, alternative funding models, and financial literacy. The design should be sleek, neon-lit, and visually immersive, using WebCrumbs for UI components. The platform should have the following features:"
+
+🔹 Cyberpunk Design Aesthetic:
+Dark mode UI with neon highlights (electric blue, neon pink, purple).
+Glowing cyberpunk buttons, holographic elements, and glitch effects.
+Typography: Use futuristic, hacker-style fonts (Orbitron, Exo, or Rajdhani).
+Animated AI assistant avatar (holographic financial guide) for interactive assistance.
+🔹 Core Features & Functionalities:
+1️⃣ AI-Powered Credit Evaluation
+
+Uses alternative data (business transactions, revenue, social trust) for fair credit scoring.
+Displays a visually engaging credit score meter in neon-style UI.
+AI explains how to improve creditworthiness in an easy-to-understand manner.
+2️⃣ Alternative Funding Marketplace
+
+List of microfinance, VC funds, and crowdfunding options tailored to women entrepreneurs.
+AI suggests best funding options based on business profile.
+One-click loan & grant application submission.
+3️⃣ Financial Literacy AI Chatbot
+
+AI-driven chatbot that explains financial concepts in simple terms.
+Provides step-by-step guides on applying for loans, budgeting, and managing cash flow.
+Conversational & supportive tone to empower first-time entrepreneurs.
+4️⃣ Interactive Dashboard
+
+User profile with personalized funding recommendations.
+Track loan applications & credit score progress.
+Daily finance tips in a cyberpunk-styled ticker.
+🔹 Tech Stack & Build Requirements:
+WebCrumbs for UI components (cyberpunk styling).
+v0.dev / Replit Agent to generate & refine website functionality.
+React (TSX) for frontend, Node.js for backend (if needed).
+AI integration via OpenAI API / custom ML models for credit evaluation.
+Responsive for both web & mobile users.
+🎯 Final Output: A fully functional, cyberpunk-styled finance platform that empowers women entrepreneurs with AI-driven credit scoring, funding access, and financial education.

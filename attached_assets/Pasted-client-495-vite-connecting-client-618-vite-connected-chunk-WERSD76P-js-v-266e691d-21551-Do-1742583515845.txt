@@ -1,0 +1,91 @@
+client:495 [vite] connecting...
+client:618 [vite] connected.
+chunk-WERSD76P.js?v=266e691d:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+queryClient.ts:15 
+            
+            
+           POST https://5d73b3bc-31cf-4862-b14c-1afe45cf5304-00-1vuvhe7rdpx7p.picard.replit.dev/api/chat 500 (Internal Server Error)
+apiRequest @ queryClient.ts:15
+sendMessage @ use-openai.ts:27
+handleSubmit @ financial-chatbot.tsx:95
+callCallback2 @ chunk-WERSD76P.js?v=266e691d:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=266e691d:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=266e691d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=266e691d:3736
+executeDispatch @ chunk-WERSD76P.js?v=266e691d:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=266e691d:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=266e691d:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=266e691d:7051
+(anonymous) @ chunk-WERSD76P.js?v=266e691d:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=266e691d:18913
+batchedUpdates @ chunk-WERSD76P.js?v=266e691d:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=266e691d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=266e691d:5478
+dispatchEvent @ chunk-WERSD76P.js?v=266e691d:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=266e691d:5449
+use-openai.ts:43 Error sending message to AI: Error: 500: {"message":"Failed to process chat request"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async apiRequest (queryClient.ts:22:3)
+    at async sendMessage (use-openai.ts:27:24)
+sendMessage @ use-openai.ts:43
+await in sendMessage
+handleSubmit @ financial-chatbot.tsx:95
+callCallback2 @ chunk-WERSD76P.js?v=266e691d:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=266e691d:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=266e691d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=266e691d:3736
+executeDispatch @ chunk-WERSD76P.js?v=266e691d:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=266e691d:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=266e691d:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=266e691d:7051
+(anonymous) @ chunk-WERSD76P.js?v=266e691d:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=266e691d:18913
+batchedUpdates @ chunk-WERSD76P.js?v=266e691d:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=266e691d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=266e691d:5478
+dispatchEvent @ chunk-WERSD76P.js?v=266e691d:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=266e691d:5449
+queryClient.ts:15 
+            
+            
+           POST https://5d73b3bc-31cf-4862-b14c-1afe45cf5304-00-1vuvhe7rdpx7p.picard.replit.dev/api/chat 500 (Internal Server Error)
+apiRequest @ queryClient.ts:15
+sendMessage @ use-openai.ts:27
+handleSubmit @ financial-chatbot.tsx:95
+callCallback2 @ chunk-WERSD76P.js?v=266e691d:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=266e691d:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=266e691d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=266e691d:3736
+executeDispatch @ chunk-WERSD76P.js?v=266e691d:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=266e691d:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=266e691d:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=266e691d:7051
+(anonymous) @ chunk-WERSD76P.js?v=266e691d:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=266e691d:18913
+batchedUpdates @ chunk-WERSD76P.js?v=266e691d:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=266e691d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=266e691d:5478
+dispatchEvent @ chunk-WERSD76P.js?v=266e691d:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=266e691d:5449
+use-openai.ts:43 Error sending message to AI: Error: 500: {"message":"Failed to process chat request"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async apiRequest (queryClient.ts:22:3)
+    at async sendMessage (use-openai.ts:27:24)
+sendMessage @ use-openai.ts:43
+await in sendMessage
+handleSubmit @ financial-chatbot.tsx:95
+callCallback2 @ chunk-WERSD76P.js?v=266e691d:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=266e691d:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=266e691d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=266e691d:3736
+executeDispatch @ chunk-WERSD76P.js?v=266e691d:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=266e691d:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=266e691d:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=266e691d:7051
+(anonymous) @ chunk-WERSD76P.js?v=266e691d:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=266e691d:18913
+batchedUpdates @ chunk-WERSD76P.js?v=266e691d:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=266e691d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=266e691d:5478
+dispatchEvent @ chunk-WERSD76P.js?v=266e691d:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=266e691d:5449

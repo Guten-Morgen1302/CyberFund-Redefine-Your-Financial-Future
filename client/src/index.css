@@ -1,0 +1,306 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-padding-top: 5rem;
+    /* This helps with anchor links so they don't get hidden under the navbar */
+  }
+
+  :root {
+    --background: 228 35% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 198 100% 60%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 320 82% 65%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 225 35% 25%;
+    --muted-foreground: 240 5% 90%;
+
+    --accent: 270 100% 70%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 198 100% 50% / 20%;
+    --input: 198 100% 50% / 30%;
+    --ring: 198 100% 50%;
+
+    --chart-1: 198 100% 50%;
+    --chart-2: 320 82% 59%;
+    --chart-3: 270 100% 70%;
+    --chart-4: 144 72% 55%;
+    --chart-5: 41 100% 70%;
+
+    --sidebar-background: 228 35% 6%;
+    --sidebar-foreground: 240 10% 97%;
+    --sidebar-primary: 198 100% 50%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 270 100% 70%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 198 100% 50% / 20%;
+    --sidebar-ring: 198 100% 50%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    background-color: #0f0f1a;
+    background-image:
+      radial-gradient(circle at 15% 50%, rgba(157, 75, 255, 0.08) 0%, transparent 20%),
+      radial-gradient(circle at 85% 30%, rgba(0, 178, 255, 0.08) 0%, transparent 30%),
+      linear-gradient(rgba(15, 15, 26, 0.97), rgba(15, 15, 26, 0.97)),
+      url('https://images.unsplash.com/photo-1557682250-18169311dbeb?q=80&w=1000&auto=format&fit=crop');
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  /* Custom Cyberpunk Styles */
+  .text-stroke {
+    -webkit-text-stroke: 1px #00b2ff;
+    color: transparent;
+  }
+
+  .glass-card {
+    background: rgb(22, 22, 39, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 62, 138, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+
+  .neo-border {
+    position: relative;
+  }
+
+  .neo-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;
+    background: linear-gradient(135deg, #00b2ff, #9d4bff) border-box;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    border-radius: inherit;
+    z-index: 0;
+  }
+
+  .cyber-ticker {
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+  }
+
+  .cyber-ticker-item {
+    position: absolute;
+    white-space: nowrap;
+    animation: ticker 20s linear infinite;
+  }
+
+  .hologram-effect {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hologram-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 178, 255, 0.05) 30%, rgba(0, 178, 255, 0.1) 100%);
+    background-size: 100% 200%;
+    animation: scan 4s ease-in-out infinite;
+  }
+
+  .credit-meter {
+    background: conic-gradient(#ff3e8a 0% 20%,
+        #ffd166 20% 60%,
+        #36e776 60% 100%);
+  }
+
+  @keyframes ticker {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes scan {
+    0% {
+      background-position: 0% 0%;
+    }
+
+    100% {
+      background-position: 0% 100%;
+    }
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px rgba(0, 178, 255, 0.5), 0 0 10px rgba(0, 178, 255, 0.3);
+    }
+
+    100% {
+      box-shadow: 0 0 10px rgba(0, 178, 255, 0.8), 0 0 20px rgba(0, 178, 255, 0.5), 0 0 30px rgba(0, 178, 255, 0.3);
+    }
+  }
+
+  @keyframes glitch {
+
+    0%,
+    100% {
+      transform: translate(0);
+    }
+
+    33% {
+      transform: translate(-3px, 1px);
+    }
+
+    66% {
+      transform: translate(3px, -1px);
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-glitch {
+    animation: glitch 1s linear infinite;
+  }
+
+  .animate-scan {
+    animation: scan 4s ease-in-out infinite;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .bg-cyber-black {
+    background-color: #0f0f1a;
+  }
+
+  .bg-cyber-dark {
+    background-color: #161627;
+  }
+
+  .bg-cyber-blue {
+    background-color: #00b2ff;
+  }
+
+  .bg-cyber-pink {
+    background-color: #ff3e8a;
+  }
+
+  .bg-cyber-purple {
+    background-color: #9d4bff;
+  }
+
+  .bg-cyber-green {
+    background-color: #36e776;
+  }
+
+  .bg-cyber-yellow {
+    background-color: #ffd166;
+  }
+
+  .border-cyber-blue {
+    border-color: #00b2ff;
+  }
+
+  .border-cyber-pink {
+    border-color: #ff3e8a;
+  }
+
+  .border-cyber-purple {
+    border-color: #9d4bff;
+  }
+
+  /* Page content container with proper padding for fixed navbar */
+  .page-content {
+    @apply pt-20 pb-12 min-h-screen;
+  }
+
+  .text-cyber-text {
+    color: #f2f2f7;
+  }
+
+  .text-cyber-text-dim {
+    color: #e0e0e6;
+  }
+
+  .text-cyber-blue {
+    color: #00b2ff;
+  }
+
+  .text-cyber-pink {
+    color: #ff3e8a;
+  }
+
+  .text-cyber-purple {
+    color: #9d4bff;
+  }
+
+  .text-cyber-green {
+    color: #36e776;
+  }
+
+  .text-cyber-yellow {
+    color: #ffd166;
+  }
+
+  .font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .font-rajdhani {
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .font-exo {
+    font-family: 'Exo', sans-serif;
+  }
+}
