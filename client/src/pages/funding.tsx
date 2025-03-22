@@ -107,7 +107,7 @@ export default function Funding() {
       deadline: null,
       interestRate: 4.0,
       equityPercentage: null,
-      image: "https://images.unsplash.com/photo-1585188976098-f673b6132393?auto=format&w=500&fit=crop&q=60",
+      image: "https://unsplash.com/photos/a-stack-of-coins-sitting-on-top-of-a-white-table-isuNeASu5vk?auto=format&w=500&fit=crop&q=60",
       active: true
     },
     {
@@ -122,7 +122,7 @@ export default function Funding() {
       deadline: null,
       interestRate: null,
       equityPercentage: 10,
-      image: "https://images.unsplash.com/photo-1576671414121-aa0c8ca370b0?auto=format&w=500&fit=crop&q=60",
+      image: "https://unsplash.com/photos/cpr-dummy-pr_0PX1b6ZM?auto=format&w=500&fit=crop&q=60",
       active: true
     }
   ];
