@@ -19,7 +19,7 @@ export function Footer() {
                 </div>
               </div>
               <h2 className="font-orbitron text-2xl font-bold bg-gradient-to-r from-cyber-blue to-cyber-pink bg-clip-text text-white">
-                NeoFin<span className="text-cyber-pink">.</span>
+                CyberFund<span className="text-cyber-pink">.</span>
               </h2>
             </div>
             <p className="text-cyber-text-dim mb-4">
@@ -151,7 +151,7 @@ export function Footer() {
 
         <div className="border-t border-cyber-blue/20 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-cyber-text-dim mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} NeoFin. All rights reserved.
+            &copy; {new Date().getFullYear()} CyberFund. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-cyber-text-dim">
             <Link href="/privacy">
