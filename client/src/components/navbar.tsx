@@ -36,7 +36,7 @@ export function Navbar({
                 </div>
                 <h1 className="font-orbitron text-2xl font-bold">
                   <span className="bg-gradient-to-r from-cyber-blue via-cyber-purple to-cyber-pink bg-clip-text text-white drop-shadow-[0_0_3px_rgba(255,255,255,0.5)]">
-                    NeoFin
+                    CyberFund
                   </span>
                   <span className="text-cyber-pink drop-shadow-[0_0_5px_rgba(255,51,153,0.7)]">
                     .
