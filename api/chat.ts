@@ -7,21 +7,39 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY || "your-api-key",
 });
 
+export const config = {
+  api: {
+    bodyParser: true,
+  },
+};
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  // Set CORS headers
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
+  res.setHeader('Access-Control-Allow-Headers', 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version');
+
+  // Handle preflight OPTIONS request
+  if (req.method === 'OPTIONS') {
+    res.status(200).end();
+    return;
+  }
+
   if (req.method !== 'POST') {
-    return res.status(405).json({ message: 'Method not allowed' });
+    return res.status(405).json({ error: 'Method not allowed' });
   }
 
   try {
     const { message } = req.body;
     
     if (!message) {
-      return res.status(400).json({ message: "Message is required" });
+      return res.status(400).json({ error: "Message is required" });
     }
 
     try {
       const response = await openai.chat.completions.create({
-        model: "gpt-4o",
+        model: "gpt-4",
         messages: [
           {
             role: "system",
@@ -32,15 +50,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       });
 
       const aiResponse = response.choices[0].message.content;
-      res.json({ response: aiResponse });
+      res.status(200).json({ response: aiResponse });
     } catch (apiError) {
       console.error("OpenAI API error, using fallback response:", apiError);
       const mockResponse = getMockChatResponse(message);
-      res.json(mockResponse);
+      res.status(200).json(mockResponse);
     }
   } catch (error) {
     console.error("Error in chat:", error);
     const mockResponse = getMockChatResponse("help");
-    res.json(mockResponse);
+    res.status(200).json(mockResponse);
   }
 }
